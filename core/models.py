@@ -16,4 +16,13 @@ class MateriaLectura(models.Model):
     foto_portada = models.ImageField(max_length=100, upload_to='fotos_tapa/', default='fotos_tapa/default.png', blank=True)
     resumen = models.FileField(upload_to='resumenes/', max_length=100, blank=True)
 
+    def __str__(self):
+        return self.titulo
+
+    class Meta:
+        verbose_name = ('Material de Lectura')
+        verbose_name_plural = ('Materiales de Lectura')
+
+
+
 
