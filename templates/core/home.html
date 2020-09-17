@@ -9,7 +9,7 @@
 <div>
 {# puedo usar una estructura de control  #}
 
-       {% if request.user.is_authenticated %}HOLA, {{ user.username }}.  {# puedo usar una variable #}
+       {% if user.is_authenticated %}HOLA, {{ user.username }}.  {# puedo usar una variable #}
        {% else %}
            Usuario no autentificado
        {% endif %}
@@ -17,5 +17,10 @@
 <div  style="margin-top: 2rem !important;">
     <a href="/admin">Ver admin</a>
 </div>
+
+<h1> {% for msg in msgs %}
+    <p>{{ msg }}</p>
+        {% endfor %}
+</h1>
 
 {% endblock %}
