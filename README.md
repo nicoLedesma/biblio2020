@@ -1,2 +1,2 @@
 # Biblio2020
-Proyecto ejemplo para aprender Django - Programacion3 - ITSVillada
+Proyecto ejemplo para enseñar Django a los alumnos de 6to C. - Programacion3 - ITSVillada
